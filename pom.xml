@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.feng</groupId>
+	<artifactId>my-test</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<properties>
+		<dexcoder.dal>2.3.1</dexcoder.dal>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<commons.dbcp.version>1.4</commons.dbcp.version>
+		<mysql.version>8.0.13</mysql.version>
+		<spring.version>4.1.5.RELEASE</spring.version>
+		<aspectj.version>1.7.2</aspectj.version>
+		<jstl.version>1.2</jstl.version>
+		<slf4j-log4j12.version>1.6.6</slf4j-log4j12.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.dexcoder</groupId>
+			<artifactId>dexcoder-dal-spring</artifactId>
+			<version>${dexcoder.dal}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>${commons.dbcp.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j-log4j12.version}</version>
+		</dependency>
+
+	</dependencies>
+</project>
